@@ -2,28 +2,72 @@
 
 Infa as a code.
 
-
-
-
-### Download 
+### Download
 
 [install doc](https://developer.hashicorp.com/terraform/tutorials/docker-get-started/install-cli)
 
 #### Requirements
 
-* Homebrew
-</br>
-Step 1
-``` bash
+- Homebrew
+- Xcode
+  </br>
+  Step 1
+  </br>
+
+```bash
 brew tap hashicorp/tap
 ```
+
 </br>
 Step 2: Install terraform
-``` bash
+</br>
+
+```bash
 brew install hashicorp/tap/terraform
 ```
 </br>
-Step 3: update latest version
-``` bash
-brew install hashicorp/tap/terraform
+Step 3: update and upgrade latest version
+</br>
+
+```bash
+brew update
+brew upgrade hashicorp/tap/terraform
 ```
+
+</br>
+Step 3: update and upgrade latest version
+</br>
+
+```bash
+brew update
+
+brew upgrade hashicorp/tap/terraform
+
+```
+
+</br>
+Step check installed
+</br>
+
+```bash
+terraform -help
+
+```
+
+</br>
+If any problems ocour, check  
+```PATH```
+
+
+###### add tab completed for coding with terminal
+
+</br>
+Step check bashrc and install packages
+</br>
+
+```bash
+touch ~/.bashrc
+terraform -install-autocomplete
+
+```
+
