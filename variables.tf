@@ -32,10 +32,17 @@ variable "animals" {
 
 
 # for each
+# variable "cars" {
+#   type = list(string)
+#   default = [ "toyota", "mitsubisi" ,"mercedes"]
+# }
+
+
+# for each
 variable "cars" {
-  type = list(string)
-  default = [ "toyota", "mitsubisi" ,"mercedes"]
+  type = list(object({
+    filename = string,
+    content  = string
+  }))
 }
-
-
 

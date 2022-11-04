@@ -39,15 +39,25 @@ output "pet_name" {
 
 
 
+# resource "local_file" "car" {
+#   filename = "./cars/car-name"
+#   content  = each.value
+#   for_each = toset(var.cars)
+# }
+
+
+
+# output "car_output" {
+#   value = local_file.car
+#   sensitive = false
+#   }
+
+
+
 resource "local_file" "car" {
-  filename = "./cars/car-name"
-  content  = each.value
-  for_each = toset(var.cars)
+  # some how it work
+  for_each = { for car in var.cars : car.filename=> car }
+  filename = each.value.filename
+  content  = each.value.content
+
 }
-
-
-
-output "car_output" {
-  value = local_file.car
-  sensitive = false
-  }
