@@ -71,3 +71,21 @@ terraform -install-autocomplete
 
 ```
 
+### Command
+
+* Init </br>
+Init resouce 
+</br>
+
+* plane </br>
+Review resouce 
+</br>
+
+* apply </br>
+Apply resource resouce 
+</br>
+
+
+
+### Ref
+[Ref](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file)
