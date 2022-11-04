@@ -77,9 +77,16 @@ terraform -install-autocomplete
 Init resouce 
 </br>
 
-* plane </br>
+* plan </br>
 Review resouce 
+
+```
+terraform plan --refresh=false (auto refresh cached)
+```
+
+
 </br>
+
 
 * apply </br>
 Apply resource resouce 
@@ -89,3 +96,9 @@ Apply resource resouce
 
 ### Ref
 [Ref](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file)
+
+
+
+### .tfvars
+
+=file  định nghĩa các biến 
