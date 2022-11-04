@@ -71,6 +71,7 @@ terraform -install-autocomplete
 
 ```
 
+
 ### Command
 
 * Init </br>
@@ -89,3 +90,9 @@ Apply resource resouce
 
 ### Ref
 [Ref](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file)
+
+### provider
+[Get all provider ](https://registry.terraform.io/browse/providers)
+</br>
+[Doc cument here](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ami)
+
